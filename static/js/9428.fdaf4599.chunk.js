@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_portfolio=self.webpackChunkreact_portfolio||[]).push([[9428],{9428:(t,a,e)=>{async function c(t){let a=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];await t.addParticleUpdater("opacity",(async t=>{const{OpacityUpdater:a}=await e.e(9904).then(e.bind(e,9904));return new a(t)}),a)}e.d(a,{loadOpacityUpdater:()=>c})}}]);
+//# sourceMappingURL=9428.fdaf4599.chunk.js.map

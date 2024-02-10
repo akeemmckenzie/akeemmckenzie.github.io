@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_portfolio=self.webpackChunkreact_portfolio||[]).push([[980],{980:(a,t,e)=>{e.d(t,{StarDrawer:()=>r});var s=e(4864);class r{async draw(a){const{drawStar:t}=await e.e(8980).then(e.bind(e,8980));t(a)}getSidesCount(a){var t;const e=a.shapeData;return Math.round((0,s.qS)(null!==(t=null===e||void 0===e?void 0:e.sides)&&void 0!==t?t:5))}async particleInit(a,t){var e;const r=t.shapeData;t.starInset=(0,s.qS)(null!==(e=null===r||void 0===r?void 0:r.inset)&&void 0!==e?e:2),await Promise.resolve()}}}}]);
+//# sourceMappingURL=980.35ee0426.chunk.js.map
