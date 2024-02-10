@@ -1,12 +1,12 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { Box } from "@mui/material";
 import { Particles, initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import background from "../Assets/Images/background.jpg";
-import profileImage from "../Assets/Images/profileimage.jpg"
-import akeem1Image from "../Assets/Images/akeem1.jpg";
-import { Box } from "@mui/material";
+import React, { useEffect, useMemo, useState } from "react";
+import { animated } from "react-spring";
 import { ReactTyped } from "react-typed";
-import { useSpring, animated } from "react-spring";
+import akeem1Image from "../Assets/Images/akeem1.jpg";
+import background from "../Assets/Images/background.jpg";
+import profileImage from "../Assets/Images/profileimage.jpg";
 
 const Home = () => {
   const [init, setInit] = useState(false);
@@ -104,37 +104,20 @@ const Home = () => {
   );
 
   const [hovered, setHovered] = useState(false);
-  const [isDelaying, setIsDelaying] = useState(false);
   const handleMouseEnter = () => {
-    if (!isDelaying) {
-      setIsDelaying(true);
-      setTimeout(() => {
-        setHovered(true);
-        setIsDelaying(false);
-      }, 500); // 200 milliseconds delay before setting hovered to true
-    }
+    setHovered(true);
   };
 
   const handleMouseLeave = () => {
-    if (!isDelaying) {
-      setIsDelaying(true);
-      setTimeout(() => {
-        setHovered(false);
-        setIsDelaying(false);
-      }, 500); // 200 milliseconds delay before setting hovered to false
-    }
+    setHovered(false);
   };
-  const imageProps = useSpring({
-    transform: hovered ? "scaleX(-1)" : "scaleX(1)", // Flip the image horizontally
-    config: { duration: 300 }, // Adjust the duration as needed (300 milliseconds in this example)
-  });
 
   return (
     init && (
       <Box
         sx={{
           position: "relative",
-          height: "100vh",
+          height: "80vh",
           overflow: "hidden",
           display: "flex",
           flexDirection: "column",
@@ -165,18 +148,17 @@ const Home = () => {
             src={hovered ? akeem1Image : profileImage}
             alt="Akeem"
             style={{
-              width: "350px", // Set the width to 200px
-              height: "350px", // Set the height to 200px
-              borderRadius: "50%", // Make the image appear as a circle
+              maxWidth: "40%",
+              height: "auto",
+              borderRadius: "50%",
               borderColor: "#2C3E50",
-              border: "4px solid #2C3E50", // Add an outlined border with 2px width and #2C3E50 color
-              position: "absolute",
-              top: "5%", // Center the image vertically
-              left: "40%", // Center the image horizontally
+              border: "4px solid #2C3E50",
               zIndex: 9999,
-              transform: "translate(-50%, -50%)", // Center the image both horizontally and vertically
               cursor: "pointer",
-              ...imageProps,
+              display: "flex",
+              marginLeft: "30%",
+              justifyContent: "center", 
+              alignItems: "center",
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -187,7 +169,7 @@ const Home = () => {
           <ReactTyped
             strings={["Akeem McKenzie"]}
             typeSpeed={50}
-            style={{ color: "#ffffff", fontSize: "4rem" }}
+            style={{ color: "#ffffff", display: "flex", fontSize: "150%"}}
           />
         </Box>
         <Box>
@@ -200,7 +182,7 @@ const Home = () => {
             typeSpeed={10}
             backSpeed={40}
             loop
-            style={{ color: "#ffffff", fontSize: "2rem", fontStyle: "italic" }}
+            style={{ color: "#ffffff", display: "flex", fontSize: "130%", fontStyle: "italic" }}
           />
         </Box>
       </Box>

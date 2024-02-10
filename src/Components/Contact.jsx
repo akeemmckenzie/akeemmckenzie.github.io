@@ -41,7 +41,6 @@ const Contact = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        backgroundColor: "#ffffcc",
       }}
     >
       <Typography variant="h4" gutterBottom sx={{ marginTop: "10%" }}>
