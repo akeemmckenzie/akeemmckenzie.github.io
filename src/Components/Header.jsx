@@ -17,7 +17,7 @@ const Header = () => (
         <Button
           color="inherit"
           onClick={() =>
-            window.open("/Akeem_McKenzie_Resume_Feb_2024.pdf", "_blank")
+            window.open("/react-portfolio/Akeem_McKenzie_Resume_Feb_2024.pdf", "_blank")
           }
         >
           Resume
