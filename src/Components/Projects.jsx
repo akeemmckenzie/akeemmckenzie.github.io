@@ -21,31 +21,31 @@ const Projects = () => {
     },
     {
       title: 'React PortFolio',
-      description: 'Created my Portfolio using React JS , packages included are material UI, particlesTS and react-Typed',
+      description: `Crafted with precision and finesse, my portfolio is powered by React JS. Elevating its aesthetic appeal, I've integrated Material UI to infuse sleek design elements. Additionally, I've incorporated the mesmerizing effects of ParticlesTS for an interactive touch. To inject personality and dynamism, react-Typed brings engaging animated text, communicating my skills and experiences seamlessly. Together, these packages synergize to showcase my work and offer an unforgettable user experience.`,
       image: projectImage2,
-      liveLink: 'https://example.com/project2',
+      liveLink: 'https://akeemmckenzie.github.io/',
       disabled: false,
       tags: ["react", "html", "css"]
     },
     {
       title: 'Angular Portfolio',
-      description: 'Created my Portfolio using Angualar',
+      description: `rafted with Angular and enhanced by Redux, my portfolio stands as a testament to seamless functionality and dynamic user interaction. Integrating Angular's robust framework, I've curated a platform that embodies both sophistication and efficiency. The incorporation of Redux further bolsters its capabilities, ensuring smooth state management and enhancing overall performance. Together, these technologies create a harmonious synergy, empowering my portfolio to showcase my work with unparalleled precision and flair.`,
       image: projectImage3,
-      liveLink: 'https://akeemmckenzie.github.io/akeemmckenzie.github.io/projects',
+      liveLink: 'https://akeemmckenzie.github.io/angular-portfolio',
       disabled: false,
       tags: ["angular", "redux"]
     },
     {
       title: 'Django Web App',
-      description: 'I have developed multiple django based apps , both mobile and web',
+      description: `Arithmetic Calculator is a web platform providing a simple calculator functionality with a REST API. Users can perform addition, subtraction, multiplication, division, square root operations, and random string generation. Each functionality has a separate cost per request. The user's balance is updated with each request, and requests are denied if the balance isn't sufficient. This repository includes both the backend (built with Django and Django Rest Framework) and the frontend (built with React and Material-UI).`,
       image: projectImage4,
-      liveLink: 'https://example.com/project4',
-      disabled: true,
+      liveLink: 'https://github.com/akeemmckenzie/arithmetic-calculator',
+      disabled: false,
       tags: ["python"]
     },
     {
       title: 'UNF Java Projects',
-      description: 'Throughout my years at UNF, I completed numerous projects utilizing Java, honing my skills and expertise in software development.',
+      description: `Throughout my tenure at UNF, I undertook a multitude of projects leveraging Java, fostering and refining my proficiency in software development. These experiences have not only honed my skills but also enriched my expertise in creating robust and innovative solutions.`,
       image: projectImage5,
       liveLink: 'https://example.com/project5',
       disabled: true,
@@ -53,7 +53,7 @@ const Projects = () => {
     },
     {
       title: 'Location Based Dating App',
-      description: `I've developed a dynamic dating platform integrating Django and React Native, leveraging location-based features for seamless user connections. Users can effortlessly match, like, and message nearby individuals, fostering meaningful connections. While not currently live, its robust functionality awaits future deployment.`,
+      description: `I've engineered a dynamic dating platform that seamlessly integrates Django and React Native, harnessing location-based features to facilitate genuine connections among users. This innovative platform empowers individuals to effortlessly match, like, and message nearby users, fostering meaningful interactions. Although not yet live, its robust functionality is poised for future deployment, promising an exceptional user experience.`,
       image: projectImage6,
       liveLink: 'https://example.com/project6',
       disabled: true,
@@ -62,7 +62,7 @@ const Projects = () => {
   ];
 
   return (
-    <Box sx={{ padding: '20px', marginTop: '50px', overflowY: "auto" }}>
+    <Box sx={{ padding: '10px', marginTop: '50px', overflowY: "auto", maxHeight: "200vh" }}>
       <Grid container spacing={3}>
         {projects.map((project, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
