@@ -18,7 +18,7 @@ const Header = () => (
           color="inherit"
           sx={{fontSize: "80%"}}
           onClick={() =>
-            window.open("/react-portfolio/Akeem_McKenzie_Resume_Feb_2024.pdf", "_blank")
+            window.open("/Akeem_McKenzie_Resume_Feb_2024.pdf", "_blank")
           }
         >
           Resume
